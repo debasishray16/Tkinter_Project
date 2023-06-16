@@ -1,3 +1,9 @@
+
+<div id="header" align="center">
+  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
+</div>
+
+
 # Tkinter_Project
 This project uses GUI-based programming paradigm which supports CRUD operations with Firebase.
 
@@ -13,8 +19,3 @@ Config = {
     "appId": "1:666918671924:web:d98ddefa593c64c2b95c61",
     "measurementId": "G-WFM6B52WE0"
 }
-
-
-<div id="header" align="center">
-  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
-</div>
