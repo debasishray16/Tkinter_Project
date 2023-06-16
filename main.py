@@ -27,14 +27,14 @@ db = firebase.database()
 def getvals():
 
     # Get values
-    namevalue = nameentry.get()
-    phonevalue = phoneentry.get()
-    gendervalue = genderentry.get()
-    emergencyvalue = emergencyentry.get()
-    paymentvalue = paymentmodeentry.get()
+    name_value = name_entry.get()
+    phone_value = phone_entry.get()
+    gender_value = gender_entry.get()
+    emergency_value = emergency_entry.get()
+    payment_value = paymentmode_entry.get()
 
     # Created a dictionary to store data sequencely.
-    getval = {"name": namevalue, "Phone": phonevalue, "Gender": gendervalue,"Emergency": emergencyvalue, "Payment Method": paymentvalue}
+    getval = {"name": name_value, "Phone": phone_value, "Gender": gender_value,"Emergency": emergency_value, "Payment Method": payment_value}
 
     # Used to put the name as the first name to particular table.
     db.child("user").push(getval)
@@ -52,29 +52,29 @@ emergency = Label(root, text="Emergency").grid(row=4, column=2)
 paymentmode = Label(root, text="Payment Method").grid(row=5, column=2)
 
 
-namevalue = StringVar()
-phonevalue = StringVar()
-gendervalue = StringVar()
-emergencyvalue = StringVar()
-paymentvalue = StringVar()
-checkvalue = IntVar()
+name_value = StringVar()
+phone_value = StringVar()
+gender_value = StringVar()
+emergency_value = StringVar()
+payment_value = StringVar()
+check_value = IntVar()
 
 
-nameentry = Entry(root, textvariable=namevalue)
-phoneentry = Entry(root, textvariable=phonevalue)
-genderentry = Entry(root, textvariable=gendervalue)
-paymentmodeentry = Entry(root, textvariable=paymentmode)
-emergencyentry = Entry(root, textvariable=emergencyvalue)
+name_entry = Entry(root, textvariable=name_value)
+phone_entry = Entry(root, textvariable=phone_value)
+gender_entry = Entry(root, textvariable=gender_value)
+paymentmode_entry = Entry(root, textvariable=payment_value)
+emergency_entry = Entry(root, textvariable=emergency_value)
 
 
-nameentry.grid(row=1, column=3)
-phoneentry.grid(row=2, column=3)
-genderentry.grid(row=3, column=3)
-paymentmodeentry.grid(row=4, column=3)
-emergencyentry.grid(row=5, column=3)
+name_entry.grid(row=1, column=3)
+phone_entry.grid(row=2, column=3)
+gender_entry.grid(row=3, column=3)
+paymentmode_entry.grid(row=4, column=3)
+emergency_entry.grid(row=5, column=3)
 
 
-checkbtn = Checkbutton(text="Remember Me?",variable=checkvalue).grid(row=6, column=3)
+checkbtn = Checkbutton(text="Remember Me?",variable=check_value).grid(row=6, column=3)
 Button(text="Submit", command=getvals).grid(row=7, column=3)
 
 
