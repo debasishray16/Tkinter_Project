@@ -4,17 +4,20 @@
 </div>
 
 
-<div>
-  <img src="https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain-wordmark.svg" title="Firebase" alt="Firebase" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg" title="MySQL"  alt="MySQL" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
-</div>
+# FireBase Construction Application
 
-# Tkinter_Project
-This project uses GUI-based programming paradigm which supports CRUD operations with Firebase.
+This Application consists of following CRUD functionality where the data are fetched, deleted, updated and inserted in Firebase Realtime databases.
 
-For this project, I have-
-API Key:
+
+
+## Documentation
+
+[FireBase Realtime Database](https://firebase.google.com/docs/database/)
+## API References
+
+```python
+# Required to connect to firebase realtime database
+
 Config = {
     "apiKey": "AIzaSyB3b7J7D5LHOqrhdvAfOivEHdUhj23_73s",
     "authDomain": "python-a4ee7.firebaseapp.com",
@@ -26,3 +29,11 @@ Config = {
     "measurementId": "G-WFM6B52WE0"
 }
 
+```
+
+Then, add this inside your main.py file to establish a connection between your code and Firebase.
+
+```python
+firebase = pyrebase.initialize_app(Config)
+db = firebase.database()
+```
