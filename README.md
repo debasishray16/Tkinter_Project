@@ -10,9 +10,12 @@ This Application consists of following CRUD functionality where the data are fet
 
 
 
-## Documentation
+## Modules
 
-[FireBase Realtime Database](https://firebase.google.com/docs/database/)
+1. [Pyrebase](https://pypi.org/project/Pyrebase/)
+
+2. [Tkinter](https://docs.python.org/3/library/tkinter.html)
+
 ## API References
 
 ```python
