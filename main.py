@@ -2,7 +2,6 @@ from tkinter import *
 from tkinter import messagebox
 import pyrebase
 
-
 root = Tk()
 root.geometry("500x500")
 root.title("First Screen")
