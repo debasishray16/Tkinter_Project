@@ -18,6 +18,7 @@ This Application consists of following CRUD functionality where the data are fet
 
 ## API References
 
+
 ```python
 # Required to connect to firebase realtime database
 
