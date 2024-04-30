@@ -7,6 +7,7 @@ root.geometry("500x500")
 root.title("First Screen")
 
 
+
 # Required to connect to firebase realtime database
 Config = {
     "apiKey": "AIzaSyB3b7J7D5LHOqrhdvAfOivEHdUhj23_73s",
@@ -20,8 +21,11 @@ Config = {
 }
 
 
+
 firebase = pyrebase.initialize_app(Config)
 db = firebase.database()
+
+
 
 
 def getvals():
