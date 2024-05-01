@@ -37,6 +37,7 @@ Config = {
 
 Then, add this inside your main.py file to establish a connection between your code and Firebase.
 
+
 ```python
 firebase = pyrebase.initialize_app(Config)
 db = firebase.database()
